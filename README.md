@@ -56,7 +56,7 @@ sudo apt update && sudo apt install -y screen && sudo apt install cron -y && chm
 
 ```
 
-Pmail会在执行后的一分钟内自动启动
+cloudreve会在执行后的一分钟内自动启动
 
 <br>
 <br>
