@@ -49,12 +49,6 @@ Cloudreve首次运行后，会自动生成配置
 在浏览器打开 http://你的ip:5212
 
 
-首次运行成功后，ssh断开连接就会导致cloudreve停止运行，如果需要再次运行：
-
-```bash
-sudo /root/cloudreve-selfuse/cloudreve
-
-```
 
 <br>
 <br>
