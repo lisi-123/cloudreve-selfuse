@@ -38,7 +38,7 @@ apt-get update && apt install sudo -y && sudo apt install git -y && git clone ht
 首次运行：
 
 ```bash
-sudo chmod +x /root/cloudreve-selfuse/cloudreves-start.sh && sudo /root/cloudreve-selfuse/cloudreves-start.sh
+sudo chmod +x /root/cloudreve-selfuse/cloudreve-start.sh && sudo /root/cloudreve-selfuse/cloudreve-start.sh
 
 ```
 
