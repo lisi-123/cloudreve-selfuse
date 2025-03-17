@@ -40,6 +40,8 @@ sudo chmod +x /root/cloudreve-selfuse/cloudreve.sh && sudo /root/cloudreve-selfu
 
 ```
 
+Cloudreve首次运行后，会自动生成数据库和配置文件
+
 
 <br>
 <br>
