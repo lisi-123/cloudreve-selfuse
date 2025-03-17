@@ -67,7 +67,7 @@ sudo /root/cloudreve-selfuse/cloudreve
 
 
 ```bash
-sudo apt update && sudo apt install -y screen && sudo apt install cron -y && chmod +x /root/cloudreve-selfuse/cloudreve-cript.sh && (crontab -l 2>/dev/null; echo "* * * * * /root/cloudreve-selfuse/cloudreve-script.sh") | sort -u | crontab -
+sudo apt update && sudo apt install -y screen && sudo apt install cron -y && chmod +x /root/cloudreve-selfuse/cloudreve-script.sh && (crontab -l 2>/dev/null; echo "* * * * * /root/cloudreve-selfuse/cloudreve-script.sh") | sort -u | crontab -
 
 ```
 
