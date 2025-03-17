@@ -10,4 +10,4 @@ unzip /root/cloudreve-selfuse/cloudreve-amd64.zip -d /root/cloudreve-selfuse/
 chmod +x /root/cloudreve-selfuse/cloudreve
 
 # 启动cloudreve
-sudo /root/cloudreve-selfuse/cloudreve.sh
+sudo /root/cloudreve-selfuse/cloudreve
