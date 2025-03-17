@@ -71,7 +71,7 @@ sudo chmod +x /root/cloudreve-selfuse/cloudreve-running.sh && sudo /root/cloudre
 
 ```
 
-cloudreve会在执行后的一分钟内自动启动
+cloudreve会在执行后自动启动,且每十分钟检测一次网盘是否运行
 
 <br>
 <br>
