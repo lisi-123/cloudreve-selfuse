@@ -73,8 +73,28 @@ sudo chmod +x /root/cloudreve-selfuse/cloudreve-running.sh && sudo /root/cloudre
 
 ## 5.使用nginx开启https
 
+如果已经有域名，给域名添加一条A记录，ip填vps的ip，然后执行以下命令即可
+
 ```bash
 sudo chmod +x /root/cloudreve-selfuse/nginx.sh && sudo /root/cloudreve-selfuse/nginx.sh
 
 ```
+<br>
+
+如果没有域名，可以去 https://www.cloudns.net 获取免费的域名
+
+cloudns 支持中文界面，记得去右上角切换
+
+前往 cloudns 注册一个账号（需要邮箱验证）
+
+注册登录后，点击“创建区域”，选择“免费区域”
+
+如果提示创建不了，大概率是节点ip风控
+
+换干净的节点，浏览器开隐私模式，然后登录重试
+
+
+
+
+<br>
 <br>
