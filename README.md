@@ -1,6 +1,9 @@
 # cloudreve部署方法（arm64）
 
 <br>
+
+### 本教程仅适用debian和ubuntu系统的vps
+
 <br>
 
 ## 1.检测系统构架
