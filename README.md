@@ -48,7 +48,13 @@ Cloudreve首次运行后，会自动生成配置
 
 在浏览器打开 http://你的ip:5212
 
+如果不喜欢 5212 这个默认端口，执行：
 
+```bash
+read -p "请输入端口号: " PORT && sed -i "s/^Listen = :.*/Listen = :$PORT/" /root/cloudreve-selfuse/conf.ini
+```
+
+即可修改为你需要的端口（不建议使用 80 和 443 ，因为之后的nginx要用）
 
 <br>
 <br>
