@@ -4,7 +4,7 @@
 apt update && apt install unzip -y
 
 # 解压缩文件
-unzip /root/cloudreve-selfuse/cloudreve-amd64.zip -d /root/cloudreve-selfuse/
+unzip /root/cloudreve-selfuse/cloudreve-arm64.zip -d /root/cloudreve-selfuse/
 
 # 赋予执行权限
 chmod +x /root/cloudreve-selfuse/cloudreve
