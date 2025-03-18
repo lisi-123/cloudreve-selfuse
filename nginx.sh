@@ -27,7 +27,8 @@ ln -s $NGINX_CONF /etc/nginx/sites-enabled/
 nginx -t && systemctl restart nginx
 
 # 申请 SSL 证书并自动配置 Nginx
-certbot --nginx --agree-tos --redirect --hsts --staple-ocsp --email your-email@example.com -d $DOMAIN
+certbot --nginx --agree-tos --redirect --hsts --staple-ocsp --register-unsafely-without-email -d $DOMAIN
+
 
 # 设置自动续期
 (crontab -l 2>/dev/null; echo "0 3 * * * certbot renew --quiet && systemctl reload nginx") | crontab -
