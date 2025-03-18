@@ -1,4 +1,4 @@
-# cloudreve部署方法（amd64）
+# cloudreve部署方法（arm64）
 
 <br>
 <br>
@@ -10,11 +10,11 @@ uname -m
 
 ```
 
-显示 x86_64 继续看下一步
+显示 aarch64 继续看下一步
 
-显示 aarch64 去看分支
+显示 x86_64 去看主页
 
-https://github.com/lisi-123/cloudreve-selfuse/tree/arm64
+https://github.com/lisi-123/cloudreve-selfuse
 
 其他构架请前往Cloudreve官方寻找对应的包自行部署
 
@@ -26,7 +26,7 @@ Cloudreve项目地址 https://github.com/cloudreve/Cloudreve
 ## 2.拉取项目
 
 ```bash
-apt-get update && apt install sudo -y && sudo apt install git -y && git clone https://github.com/lisi-123/cloudreve-selfuse.git
+apt-get update && apt install sudo -y && sudo apt install git -y && git clone -b arm64 --single-branch https://github.com/lisi-123/cloudreve-selfuse.git
 
 ```
 
