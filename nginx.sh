@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # 获取用户输入的域名和 Cloudreve 端口
-read -p "请输入你的域名: " DOMAIN
-read -p "请输入 Cloudreve 运行端口: " CLOUDREVE_PORT
+read -p "输入你的域名（确认已解析ip）: " DOMAIN
+read -p "输入 Cloudreve 运行端口: " CLOUDREVE_PORT
 
 # 安装 Nginx 和 Certbot
 apt update && apt install -y nginx certbot python3-certbot-nginx
