@@ -33,7 +33,7 @@ read -p "请输入远程服务器 IP 地址: " REMOTE_IP
 # 开始传输文件
 echo "正在使用 rsync 传输文件到 $USERNAME@$REMOTE_IP:$REMOTE_PATH ..."
 
-# 使用 -u 跳过较旧或相同文件，使用 --ignore-existing 跳过已存在的文件
-rsync -avz -u --ignore-existing -e "ssh -p $SSH_PORT" "$LOCAL_PATH/" "$USERNAME@$REMOTE_IP:$REMOTE_PATH/"
+# 忽略同名文件，仅仅传输不同的文件
+rsync -avz --ignore-existing -e "ssh -p $SSH_PORT" "$LOCAL_PATH/" "$USERNAME@$REMOTE_IP:$REMOTE_PATH/"
 
 echo "文件传输完成！"
