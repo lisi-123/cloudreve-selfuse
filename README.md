@@ -55,6 +55,7 @@ Cloudreve首次运行后，会自动生成配置
 
 ```bash
 read -p "请输入端口号: " PORT && sed -i "s/^Listen = :.*/Listen = :$PORT/" /root/cloudreve-selfuse/conf.ini
+
 ```
 
 更换为你需要的端口（不建议使用 80 和 443 ，因为之后的nginx要用）
