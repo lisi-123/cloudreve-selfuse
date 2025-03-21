@@ -45,7 +45,7 @@ SSH_PORT=${SSH_PORT:-$DEFAULT_PORT}
 
 read -p "请输入远程服务器 IP 地址: " REMOTE_IP
 
-read -s -p "请输入远程服务器的 SSH 密码: " SSH_PASSWORD
+read -p "请输入远程服务器的 SSH 密码: " SSH_PASSWORD
 echo ""
 
 # 开始传输文件
