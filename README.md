@@ -141,7 +141,7 @@ sudo chmod +x /root/cloudreve-selfuse/cloudreve-move.sh && sudo /root/cloudreve-
 执行后，根据提示填写接收端的用户名，端口，ip，密码。然后等待传输
 
 
-传输完成后，继续执行 **“3.运行"** 以及之后的步骤
+传输完成后，在接收端（新vps）继续执行 **“3.运行"** 以及之后的步骤
 
 
 
