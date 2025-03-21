@@ -76,7 +76,7 @@ sudo chmod +x /root/cloudreve-selfuse/cloudreve-running.sh && sudo /root/cloudre
 
 执行后，cloudreve会在后台后自动启动（断开ssh连接也能保持运行）
 
-且每十分钟检测一次网盘是否运行，如果网盘没有运行，则启动网盘
+且每十分钟自动检测一次网盘是否运行，如果网盘没有运行，则启动网盘
 
 <br>
 
