@@ -118,20 +118,20 @@ cloudns 支持中文界面，记得去右上角切换
 
 如果按我的教程部署过cloudreve，现在需要迁移到新vps上
 
-假设旧vps称为 发送端
+假设旧vps称为 **发送端**
 
-新vps称为 接收端
+新vps称为 **接收端**
 
-数据迁移实际上是在第二步和第三步中间，加一个传输数据的步骤
+数据迁移实际上是在第二步和第三步中间，加一个**传输数据**的步骤
 
-所以首先要在 接收端 完成 第一步“检测系统构架”，第二步“拉取项目”，然后执行
+所以首先要在 **接收端** 完成 “**1.检测系统构架**” ， “**2.拉取项目**”，然后执行
 
 ```bash
 sudo apt install rsync -y
 
 ```
 
-接下来打开发送端vps，ssh连接后，执行
+接下来打开**发送端**，ssh连接后，执行
 
 ```bash
 sudo chmod +x /root/cloudreve-selfuse/cloudreve-move.sh && sudo /root/cloudreve-selfuse/cloudreve-move.sh
@@ -141,7 +141,7 @@ sudo chmod +x /root/cloudreve-selfuse/cloudreve-move.sh && sudo /root/cloudreve-
 执行后，根据提示填写接收端的用户名，端口，ip，密码。然后等待传输
 
 
-传输完成后，继续执行 “3.运行" 以及之后的步骤
+传输完成后，继续执行 **“3.运行"** 以及之后的步骤
 
 
 
