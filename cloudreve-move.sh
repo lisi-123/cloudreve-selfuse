@@ -46,13 +46,17 @@ SSH_PORT=${SSH_PORT:-$DEFAULT_PORT}
 read -p "请输入远程服务器 IP 地址: " REMOTE_IP
 
 read -p "请输入远程服务器的 SSH 密码: " SSH_PASSWORD
-echo ""
 
 # 开始传输文件
 echo "正在使用 rsync 传输文件到 $USERNAME@$REMOTE_IP:$REMOTE_PATH ..."
 
-# 使用 sshpass 传递密码，跳过 SSH 交互
-sshpass -p "$SSH_PASSWORD" rsync -avz --ignore-existing -e "ssh -p $SSH_PORT -o StrictHostKeyChecking=no" "$LOCAL_PATH/" "$USERNAME@$REMOTE_IP:$REMOTE_PATH/"
+# 传输目录 uploads 并覆盖远程文件
+sshpass -p "$SSH_PASSWORD" rsync -avz -e "ssh -p $SSH_PORT -o StrictHostKeyChecking=no" "$LOCAL_PATH/uploads/" "$USERNAME@$REMOTE_IP:$REMOTE_PATH/uploads/"
+
+# 传输 cloudreve.db 并覆盖远程文件
+sshpass -p "$SSH_PASSWORD" rsync -avz -e "ssh -p $SSH_PORT -o StrictHostKeyChecking=no" "$LOCAL_PATH/cloudreve.db" "$USERNAME@$REMOTE_IP:$REMOTE_PATH/"
+
+# 传输 conf.ini 并覆盖远程文件
+sshpass -p "$SSH_PASSWORD" rsync -avz -e "ssh -p $SSH_PORT -o StrictHostKeyChecking=no" "$LOCAL_PATH/conf.ini" "$USERNAME@$REMOTE_IP:$REMOTE_PATH/"
 
 echo "文件传输完成！"
-
