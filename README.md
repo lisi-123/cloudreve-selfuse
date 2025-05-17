@@ -79,13 +79,20 @@ read -p "请输入端口号: " PORT && sed -i "s/^Listen = :.*/Listen = :$PORT/"
 
 目前，ssh断开连接就会导致cloudreve停止运行
 
+为了确保cloudreve完全停止，可以执行一次
+
+```bash
+pkill cloudreve
+
+```
+
 在 cloudreve **停止运行** 的情况下，执行以下内容
 
 
 ```bash
 sudo chmod +x /root/cloudreve-selfuse/cloudreve-running.sh && sudo /root/cloudreve-selfuse/cloudreve-running.sh
 
-```
+```bash
 
 执行后，cloudreve会在后台后自动启动（断开ssh连接也能保持运行）
 
