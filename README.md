@@ -92,7 +92,7 @@ pkill cloudreve
 ```bash
 sudo chmod +x /root/cloudreve-selfuse/cloudreve-running.sh && sudo /root/cloudreve-selfuse/cloudreve-running.sh
 
-```bash
+```
 
 执行后，cloudreve会在后台后自动启动（断开ssh连接也能保持运行）
 
