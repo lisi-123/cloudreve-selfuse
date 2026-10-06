@@ -105,6 +105,14 @@ systemctl enable --now cloudreve
 
 ```
 
+检查
+
+```bash
+systemctl status cloudreve
+
+```
+
+如果看到 Active: active (running) ，说明成功了
 
 <br>
 
