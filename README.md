@@ -62,7 +62,7 @@ read -p "请输入端口号: " PORT && sed -i "s/^Listen = :.*/Listen = :$PORT/"
 <br>
 <br>
 
-## 4.使用screen实现持续运行
+## 4.使用systemd实现持续运行
 
 目前，ssh断开连接就会导致cloudreve停止运行
 
@@ -77,13 +77,34 @@ pkill cloudreve
 
 
 ```bash
-sudo chmod +x /root/cloudreve-selfuse/cloudreve-running.sh && sudo /root/cloudreve-selfuse/cloudreve-running.sh
+cat > /etc/systemd/system/cloudreve.service <<'EOF'
+[Unit]
+Description=Cloudreve
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/cloudreve-selfuse
+ExecStart=/root/cloudreve-selfuse/cloudreve
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+EOF
 
 ```
 
-执行后，cloudreve会在后台后自动启动（断开ssh连接也能保持运行）
+然后再执行
 
-且每十分钟自动检测一次网盘是否运行，如果网盘没有运行，则启动网盘
+```bash
+systemctl daemon-reload
+systemctl enable --now cloudreve
+
+```
+
 
 <br>
 
