@@ -180,8 +180,3 @@ sudo chmod +x /root/cloudreve-selfuse/cloudreve-move.sh && sudo /root/cloudreve-
 
 
 <br>
-<br>
-
-
-
-有问题联系→ [@talkingstick233_bot](https://t.me/talkingstick233_bot)
